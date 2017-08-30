@@ -13,7 +13,7 @@ Vagrant.configure('2') do |config|
   config.vm.provider :virtualbox do |vb|
     # Use VBoxManage to customize the VM
     vb.customize ["modifyvm", :id,
-                  "--name", "oracle",
+                  "--name", "oracle-dev-box",
                   # Oracle claims to need 512MB of memory available minimum
                   "--memory", "512",
                   # Enable DNS behind NAT

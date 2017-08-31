@@ -18,4 +18,5 @@ There are a few convenience scripts for managing schemas:
 - `script/schema/drop [schema name]`: drops a schema.
 - `script/schema/list`: lists all schemas.
 
+Most of this was blatantly stolen from [rails-dev-box-runs-oracle](https://github.com/yahonda/rails-dev-box/tree/runs_oracle).
 

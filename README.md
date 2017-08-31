@@ -8,7 +8,7 @@ A generic, empty Oracle XE instance for development purposes.
 and place the zip file in `puppet/modules/oracle/files/`.
 2. `vagrant up`
 
-This boots up an Oracle XE instance running on port 1521. Username is `sys`; password is `manager`.
+This boots up an Oracle XE instance running on port 1521. Usernames are `sys` and `system`; password is `manager`.
 
 ## Scripts
 

@@ -1,0 +1,9 @@
+username=$1
+password=a$(openssl rand -hex 11)
+
+sqlplus -S system/manager@localhost <<EOF
+create user $username identified by $password;
+grant connect, resource to $username;
+EOF
+
+echo "password: $password"

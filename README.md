@@ -10,5 +10,12 @@ and place the zip file in `puppet/modules/oracle/files/`.
 
 This boots up an Oracle XE instance running on port 1521. Username is `sys`; password is `manager`.
 
-Most of this was blatantly stolen from rails-dev-box-runs-oracle.
+## Scripts
+
+There are a few convenience scripts for managing schemas:
+
+- `script/schema/create [schema name]`: creates a user/schema. A password will be generated and printed to the console.
+- `script/schema/drop [schema name]`: drops a schema.
+- `script/schema/list`: lists all schemas.
+
 

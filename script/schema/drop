@@ -1,0 +1,6 @@
+username=$1
+
+sqlplus -S system/manager@localhost <<EOF
+drop user $username;
+EOF
+

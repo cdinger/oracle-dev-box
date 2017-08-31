@@ -1,0 +1,7 @@
+sqlplus -S system/manager@localhost <<EOF
+select distinct owner
+from dba_segments
+where owner not in ('SYSTEM', 'XDB', 'SYS', 'TSMSYS', 'MDSYS', 'EXFSYS', 'WMSYS', 'ORDSYS', 'OUTLN', 'DBSNMP')
+order by owner;
+EOF
+

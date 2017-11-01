@@ -6,7 +6,6 @@ export ORACLE_BASE=/u01/app/oracle
 export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
 export PATH=$ORACLE_HOME/bin:$PATH
 
-export ORACLE_ENHANCED=true
 export DATABASE_SYS_PASSWORD=manager
 export DATABASE_VERSION=11.2.0.2
 export DATABASE_HOST=localhost

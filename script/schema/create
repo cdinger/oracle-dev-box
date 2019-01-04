@@ -1,5 +1,6 @@
 username=$1
-password=a$(openssl rand -hex 11)
+generated_password=a$(openssl rand -hex 11)
+password=${2:-$generated_password}
 
 sqlplus -S system/manager@localhost <<EOF
 create user $username identified by $password;
